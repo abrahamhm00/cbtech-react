@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@media (prefers-reduced-motion) {
+  *,
+  ::before,
+  ::after {
+    animation: none !important;
+  }
+}
+
+
+@layer base {
+  :root {
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  h2 {
+    @apply text-2xl font-bold;
+  }
+
+  .debug {
+    @apply border-2 border-red-500;
+  }
+  .debug-2 {
+    @apply border-2 border-blue-500;
+  }
+
+  body {
+  }
+}
+
