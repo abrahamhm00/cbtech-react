@@ -21,11 +21,22 @@ const server = serve({
       },
     },
 
-    "/api/hello/:name": async req => {
+    "/api/hello/:name": async (req) => {
       const name = req.params.name;
       return Response.json({
         message: `Hello, ${name}!`,
       });
+    },
+
+    "/api/todos": {
+      async GET(req) {
+        await Bun.sleep(1000);
+        return Response.json([
+          { id: 1, what: "Fregar la terraza", done: true },
+          { id: 2, what: "Comprar patatas", done: false },
+          { id: 3, what: "Reservar vuelos", done: false },
+        ]);
+      },
     },
   },
 

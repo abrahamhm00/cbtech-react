@@ -19,7 +19,7 @@ export default function App() {
             {debugMode ? "Exit" : "Enter"}
           </button>
 
-          {/* <SectionTodos /> */}
+          <SectionTodos />
           {/* <SectionComponentes /> */}
           <SectionUseEffect />
 
