@@ -5,6 +5,7 @@ import NumberList from "./NumberList"
 import SetBombillas from "./SetBombillas"
 import { $darkMode, addRandomNumber, resetNumberList } from "./stores"
 import { useStore } from "@nanostores/react"
+import TodoList from "./TodoList"
 
 /*
 https://github.com/nanostores/nanostores
@@ -16,6 +17,7 @@ export function App() {
     const darkMode = useStore($darkMode)
     return (
         <>
+            <TodoList />
             <NasaImageSearch />
             <button onClick={() => $darkMode.set(!$darkMode.get())}>
                 {darkMode ? "light" : "dark"}
