@@ -1,37 +1,42 @@
 @import "tailwindcss";
 
 @media (prefers-reduced-motion) {
-  *,
-  ::before,
-  ::after {
-    animation: none !important;
-  }
+    *,
+    ::before,
+    ::after {
+        animation: none !important;
+    }
 }
-
 
 @layer base {
-  :root {
-  }
+    :root {
+    }
 
-  h1 {
-    font-size: 2rem;
-    font-weight: bold;
-  }
-  h2 {
-    @apply text-2xl font-bold;
-  }
-  button {
-    @apply bg-gray-300 px-2 py-1 rounded;
-  }
+    h1 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    h2 {
+        @apply text-2xl font-bold;
+    }
+    button {
+        @apply bg-gray-300 px-2 py-1 rounded;
+    }
 
-  .debug {
-    @apply border-2 border-red-500;
-  }
-  .debug-2 {
-    @apply border-2 border-blue-500;
-  }
+    .debug {
+        @apply border-2 border-red-500;
+    }
+    .debug-2 {
+        @apply border-2 border-blue-500;
+    }
 
-  body {
-  }
+    header nav {
+        @apply px-4 bg-blue-400 text-white font-bold flex flex-row justify-center gap-6;
+    }
+    nav a {
+        @apply py-3 block border-white;
+    }
+
+    body {
+    }
 }
-

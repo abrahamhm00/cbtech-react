@@ -13,7 +13,7 @@ export default function SectionUseEffect() {
       <div className="h-12" />
 
       <h2 className="border-t">NASA Image Search</h2>
-      <NasaImageSearch />
+      
     </section>
   );
 }
