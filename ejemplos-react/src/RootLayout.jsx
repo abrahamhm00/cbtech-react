@@ -17,6 +17,7 @@ export default function RootLayout() {
             <DebugContext.Provider value={{ debugMode, setDebugMode }}>
                 <header>
                     <nav>
+                        <Link_ path="/" name="Home" />
                         <Link_ path="/stop-watch" name="Stop Watches" />
                         <Link_ path="/components" name="Component Gallery" />
                         <Link_ path="/todos" name="Todo list" />
